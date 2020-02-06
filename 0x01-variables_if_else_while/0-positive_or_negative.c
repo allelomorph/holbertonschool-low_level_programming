@@ -16,7 +16,7 @@ int main(void)
 /* first check if positive */
 	if (n > 0)
 	{
-		printf("%i is positive\n", n);
+		printf("%iis positive\n", n);
 	}
 /* if not, determine whether negative or zero */
 	else
@@ -24,11 +24,11 @@ int main(void)
 		if (n < 0)
 		{
 /* check if negative */
-			printf("%i is negative\n", n);
+			printf("%iis negative\n", n);
 		}
 		else
 		{
-			printf("%i is zero\n", n);
+			printf("%iis zero\n", n);
 		}
 	}
 	return (0);
