@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <time.h>
+#include <stdio.h>
 
 /**
  * main - entry point
@@ -12,22 +13,22 @@ int main(void)
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	/* first check if zero */
-	if (n = 0)
+/* first check if positive */
+	if (n > 0)
 	{
-		printf("%d is zero", n);
-		/* if not, determine whether pos or neg */
+		printf("%i is positive", n);
+	}
+/* if not, determine whether negative or zero */
+	else
+	{
+		if (n < 0)
+		{
+/* check if negative */
+			printf("%i is negative", n);
+		}
 		else
 		{
-			if (n > 0)
-			{
-				/* check if positive */
-				printf("%d is positive", n);
-				else
-				{
-					printf("%d is negative", n);
-				}
-			}
+			printf("%i is zero", n);
 		}
 	}
 	return (0);
