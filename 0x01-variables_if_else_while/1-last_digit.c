@@ -1,4 +1,4 @@
-#include <stdlib.h>
+B#include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
 
@@ -17,22 +17,22 @@ int main(void)
 /* divide n and take remainder */
 	lastDigit = n % 10;
 /* print first segment of string */
-	printf("Last digit of %i is ", n);
+	printf("Last digit of %i is %i ", n, lastDigit);
 /* is lastDigit more than 5? */
 	if (lastDigit > 5)
 	{
-		printf("%i and is greater than 5\n", lastDigit);
+		printf("and is greater than 5\n");
 	}
 /* if not, determine whether zero */
 	else
 	{
 		if (lastDigit == 0)
 		{
-			printf("%i and is zero\n", lastDigit);
+			printf("and is 0\n");
 		}
 		else
 		{
-			printf("%i and is less than 6 and not 0\n", lastDigit);
+			printf("and is less than 6 and not 0\n");
 		}
 	}
 	return (0);
