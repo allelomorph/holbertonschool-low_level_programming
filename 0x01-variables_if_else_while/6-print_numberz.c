@@ -8,12 +8,10 @@
 int main(void)
 {
 	int i;
-	char c;
 
 	for (i = 48; i < 58; i++)
 	{
-		c = i;
-		putchar(c);
+		putchar(i+0);
 	}
 	putchar('\n');
 	return (0);
