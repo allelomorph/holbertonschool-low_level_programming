@@ -1,0 +1,3 @@
+*0x02. C - Functions, nested loops*
+
+Looks like some review, and then things get more complex...
