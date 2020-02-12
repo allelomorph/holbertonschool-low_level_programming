@@ -3,6 +3,7 @@
 
 /**
  * print_to_98 - prints all natural numbers from n to 98, plus a new line.
+ * @n: value that determines boundary of set of naturals to 98
  *
  * Return: void
  */
