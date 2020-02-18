@@ -27,7 +27,7 @@ char *_strcpy(char *dest, char *src)
 	{
 		length++;
 	}
-	length -= 1;
+/*	length -= 1; */
 /*
  * end _strlen mimicry, use its value to limit next loop
  *
