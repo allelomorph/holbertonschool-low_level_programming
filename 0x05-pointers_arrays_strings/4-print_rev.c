@@ -13,7 +13,7 @@ void print_rev(char *s)
 	int i = 0;
 	char *st;
 
-/* 2nd variable may be unecessary, but insulating s from change */
+/* 2nd array may be unecessary, but insulating s from change */
 	st = s;
 /*
  * adapting code form _strlen
