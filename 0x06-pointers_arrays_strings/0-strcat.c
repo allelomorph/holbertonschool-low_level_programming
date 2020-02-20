@@ -41,8 +41,8 @@ char *_strcat(char *dest, char *src)
 	}
 
 /* append null byte to concatenated string manually */
-	src++;
-	*src = '\0';
+	dest++;
+	*dest = '\0';
 
 /* reset pointers for dest and src to their original starting values */
 	dest = d;
