@@ -6,7 +6,7 @@
  *
  * @dest: string to have content added from str
  *
- * @str: string to be read
+ * @src: string to be read
  *
  * Return: pointer to dest
  */
@@ -23,7 +23,8 @@ char *_strcat(char *dest, char *src)
 	{
 		dest++;
 	}
-/* tracer
+/*
+ * tracer
  *	printf("*dest=%c, dest=%p\n", *dest, dest);
  */
 /* increment through src addresses, assigning content to end of dest */
@@ -32,8 +33,8 @@ char *_strcat(char *dest, char *src)
 		*dest = *src;
 		src++;
 		dest++;
-/* tracers
- *
+/*
+ * tracers
  *		printf("*src=%c, src=%p", *src, src);
  *		printf("*dest=%c dest=%p\n", *dest, dest);
  */
