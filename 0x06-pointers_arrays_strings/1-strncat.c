@@ -6,7 +6,7 @@
  *
  * @n: amount of characters/bytes from src to copy
  *
- * @dest: string to have content added from str
+ * @dest: string to have content added from src
  *
  * @src: string to be read
  *
