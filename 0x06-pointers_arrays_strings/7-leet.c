@@ -28,7 +28,7 @@ char *leet(char *stg)
 			if (rem[j] == stg[i])
 			{
 /* replace with corresponding char from 1337 string */
-				stg[i] == rep[(j / 2)];
+				stg[i] = rep[(j / 2)];
 				break;
 			}
 		}
