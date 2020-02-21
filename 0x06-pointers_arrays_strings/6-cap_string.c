@@ -17,13 +17,15 @@ char *cap_string(char *stg)
 	int i;
 	int d;
 	char *delim = " \t\n,;.!?\"(){}";
-/*
- * tracer
- *	printf("%s\n", delim);
- */
+
+/* workaround to address first character in string without refactoring */
+	if ((stg[0] >= 'a') && (stg[0] <= 'z'))
+	{
+		stg[0] = (stg[0] + 32);
+	}
 
 /* incrementing to end of stg */
-	for (i = 0; stg[i] != 0; i++)
+	for (i = 1; stg[i] != 0; i++)
 	{
 /* incrementing through string of delimiter chars */
 		for (d = 0; delim[d] != 0; d++)
