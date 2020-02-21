@@ -16,7 +16,7 @@ int _strcmp(char *s1, char *s2)
 	char *s1a;
 	char *s2a;
 
-	int diff;
+	int diff = 0;
 
 /* record starting addresses of s1 and s2 */
 	s1a = s1;
@@ -25,12 +25,14 @@ int _strcmp(char *s1, char *s2)
 /* increment through s1 and s2 until first null between them */
 	while (*s1 && *s2)
 	{
-	      diff = (*s1 - *s2);
+		diff = (*s1 - *s2);
 /* if ASCII values are not the same, stop looking */
-	      if (diff != 0)
-		      break;
-	      s1++;
-	      s2++;
+		if (diff != 0)
+		{
+			break;
+		}
+		s1++;
+		s2++;
 	}
 
 /* reset pointers for s1 and s2 to their original starting values */
