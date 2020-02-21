@@ -17,8 +17,10 @@ char *cap_string(char *stg)
 	int i;
 	int d;
 	char *delim = " \t\n,;.!?\"(){}";
-
-	printf("%s\n", delim);
+/*
+ * tracer
+ *	printf("%s\n", delim);
+ */
 
 /* incrementing to end of stg */
 	for (i = 0; stg[i] != 0; i++)
