@@ -23,6 +23,10 @@ char *_strstr(char *haystack, char *needle)
 	{
 		for (i = 0; *(needle + i); i++)
 		{
+			if (*(needle + i) == 0)
+			{
+				return (NULL);
+			}
 			if (*(haystack + i) == *(needle + i))
 			{
 				match = 1;
@@ -39,5 +43,5 @@ char *_strstr(char *haystack, char *needle)
 			return (haystack);
 		}
 	}
-	return (0);
+	return (NULL);
 }
