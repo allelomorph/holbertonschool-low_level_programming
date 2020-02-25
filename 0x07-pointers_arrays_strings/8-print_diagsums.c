@@ -23,12 +23,12 @@ void print_diagsums(int *a, int size)
 	{
 		if (i % (size + 1) == 0)
 		{
-			printf("br %i\n", a[i]);
+/*			printf("br %i\n", a[i]);  */
 			sum_br += a[i];
 		}
 		if (i % (size - 1) == 0 && (i > 0 && (i < (size_sq - 1))))
 		{
-			printf("bl %i\n", a[i]);
+/*			printf("bl %i\n", a[i]); */
 			sum_bl += a[i];
 		}
 	}
