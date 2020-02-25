@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * _strpstr - finds the first occurrence of the substring needle
+ * _strstr - finds the first occurrence of the substring needle
  * in the string haystack. The terminating null bytes (\0) are
  * not compared
  *
@@ -17,30 +17,26 @@
 char *_strstr(char *haystack, char *needle)
 {
 	int i;
-	int j;
-	int k;
 	int match;
 
-	for (i = 0; haystack[i]; i++)
+	for (; *haystack; haystack++)
 	{
-		match = 0;
-		for (j = 0; needle[j]; j++)
+		for (i = 0; *(needle + i); i++)
 		{
-			k = i;
-			if (haystack[k] == needle[j])
+			if (*(haystack + i) == *(needle + i))
 			{
 				match = 1;
-				k++;
 				continue;
 			}
 			else
 			{
+				match = 0;
 				break;
 			}
 		}
 		if (match)
 		{
-			return (&haystack[i]);
+			return (haystack);
 		}
 	}
 	return (NULL);
