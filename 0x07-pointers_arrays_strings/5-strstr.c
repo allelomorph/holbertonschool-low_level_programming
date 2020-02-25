@@ -15,7 +15,7 @@
  */
 
 char *_strstr(char *haystack, char *needle)
-/* 3rd draft after 2nd cosult, see draft file for other attempts
+/* 3rd build after 2nd cosult, see draft file for other attempts */
 {
 	int i;
 
@@ -34,32 +34,4 @@ char *_strstr(char *haystack, char *needle)
 		}
 	}
 	return (NULL);
-}*/
-
-/* first draft, missed one output check */
-{
-	int i;
-	int match;
-
-	for (; *haystack; haystack++)
-	{
-		for (i = 0; *(needle + i); i++)
-		{
-			if (*(haystack + i) == *(needle + i))
-			{
-				match = 1;
-				continue;
-			}
-			else
-			{
-				match = 0;
-				break;
-			}
-		}
-		if (match && (*(needle + i) == 0))
-		{
-			return (haystack);
-		}
-	}
-	return (0);
 }
