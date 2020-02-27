@@ -5,7 +5,7 @@
  * find_sq - recursive helper of _sqrt_recursion, adds second variable to
  * increment guesses to compare against n
  *
- * @guess: sucessive candiadates for square root of n
+ * @guess: sucessive candidates for square root of n
  *
  * @n: number to be checked for root
  *
