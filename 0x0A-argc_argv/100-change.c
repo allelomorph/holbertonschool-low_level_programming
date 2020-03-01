@@ -3,7 +3,7 @@
 
 /**
  * main - entry point, prints mininum amount of coins needed,
- * prints error is if too many arguments, 0 if negative number given
+ * prints error if too many arguments, 0 if negative number given
  *
  * @argc: amount of cmd line arguments, starting with program
  * name itself
