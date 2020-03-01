@@ -3,7 +3,8 @@
 /**
  * main - entry point, prints file name of program
  *
- * @argc: amount of cmd line arguments
+ * @argc: amount of cmd line arguments, starting at 0 for program
+ * name itself
  *
  * @argv: array of strings containing cmd line arguments
  *
