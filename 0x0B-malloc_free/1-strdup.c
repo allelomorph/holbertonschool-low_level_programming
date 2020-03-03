@@ -38,8 +38,7 @@ char *_strdup(char *str)
 	int i;
 	char *p;
 
-	if (str == NULL)
-/* || *str == '\0') */
+	if (str == NULL || *str == '\0')
 		return (NULL);
 
 	size = _strlen(str);
