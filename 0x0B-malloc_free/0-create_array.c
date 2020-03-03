@@ -20,14 +20,17 @@ char *create_array(unsigned int size, char c)
 
 	if (size == 0)
 		return (NULL);
-
-	p = malloc(sizeof(char) * size);
-
-	for (i = 0; i < size; i++)
-		p[i] = c;
-
-	if (p == NULL)
-		return (NULL);
 	else
-		return (p);
+	{
+		p = malloc(sizeof(char) * size);
+
+		if (p == NULL)
+			return (NULL);
+		else
+		{
+			for (i = 0; i < size; i++)
+			p[i] = c;
+		}
+	}
+	return (p);
 }
