@@ -38,13 +38,15 @@ char *_strdup(char *str)
 	int i;
 	char *p;
 
+
 	if (str == NULL)
 		return (NULL);
-
-	if (*str == '\0')
-		size = 1;
-	else
-		size = _strlen(str);
+/*
+ *	if (*str == '\0')
+ *		size = 1;
+ *	else
+ */
+	size = (_strlen(str) + 1);
 
 	p = malloc(sizeof(char) * size);
 
