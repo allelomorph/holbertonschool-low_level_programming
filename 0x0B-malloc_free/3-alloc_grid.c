@@ -35,14 +35,14 @@ int **alloc_grid(int width, int height)
 		p[i] = malloc(sizeof(int) * width);
 		if (p[i] == NULL)
 		{
-/* if any single 2nd dimension allocation returns an error, avoid memory leak */
- 			for (k = 0; k < i; k++)
+/* if any 2nd dimension allocation returns an error, avoid memory leak */
+			for (k = 0; k < i; k++)
 			{
 /* by freeing up memory allocated in any previous step for dimension height */
 				free(p[k]);
 			}
 /* then freeing the height-sized array of pointers in the second dimension */
- 			free(p);
+			free(p);
 			return (NULL);
 		}
 		for (j = 0; j < width; j++)
