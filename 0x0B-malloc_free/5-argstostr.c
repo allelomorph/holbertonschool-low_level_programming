@@ -38,7 +38,6 @@ char *argstostr(int ac, char **av)
 	int i;
 	int j;
 	int k;
-
 	int cc_length;
 	char *concat;
 
@@ -51,12 +50,9 @@ char *argstostr(int ac, char **av)
 	}
 /* plus one for final null byte */
 	cc_length += 1;
-/* allocate space for concatenated string */
 	concat = malloc(sizeof(char) * cc_length);
-/* with failure protection */
 	if (concat == NULL)
 		return (NULL);
-
 /* reuse i as concat incrementer and init to first position */
 	i = 0;
 /* for each string in array of args */
@@ -64,19 +60,16 @@ char *argstostr(int ac, char **av)
 	{
 /* for each char in that string */
 		for (k = 0; k < (_strlen(av[j]) + 1); k++)
-			{
-				if (k < _strlen(av[j]))
-					concat[i] = av[j][k];
-/* filter to add newline after each arg string */
-				else
-					concat[i] = '\n';
-/* next position in concat */
-				i++;
-			}
+		{
+			if (k < _strlen(av[j]))
+				concat[i] = av[j][k];
+			else
+				concat[i] = '\n';
+			i++;
+		}
 	}
 /* append final null byte in concatenated string */
 	i++;
 	concat[i] = '\n';
-
 	return (concat);
 }
