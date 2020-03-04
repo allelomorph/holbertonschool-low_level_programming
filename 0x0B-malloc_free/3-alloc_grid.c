@@ -21,7 +21,7 @@ int **alloc_grid(int width, int height)
 	int j;
 	int **p;
 
-	if (width < 0 || height < 0)
+	if (width < 1 || height < 1)
 		return (NULL);
 /* allocate space for array of height number single pointers */
 	p = malloc(sizeof(int *) * height);
