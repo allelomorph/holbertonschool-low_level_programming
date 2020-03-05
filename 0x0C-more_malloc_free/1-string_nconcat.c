@@ -1,6 +1,6 @@
 #include "holberton.h"
 #include <stdlib.h>
-
+#include <stdio.h>
 /**
  * _strlen - returns the length of a string, modifed return
  *
@@ -38,7 +38,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	int len1;
 	int len2;
-	int uns_n = n;
+	int sign_n = n;
 	int i;
 	char *cnct;
 
@@ -49,7 +49,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	if (s2 == NULL)
 		len2 = 0;
-	else if (uns_n > _strlen(s2))
+	else if (sign_n > _strlen(s2))
 		len2 = _strlen(s2);
 	else
 		len2 = n;
@@ -67,8 +67,8 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		cnct[len1 + i] = s2[i];
 	}
-	i++;
-	cnct[len1 + i] = '\0';
+
+	cnct[len1 + len2] = '\0';
 
 	return (cnct);
 }
