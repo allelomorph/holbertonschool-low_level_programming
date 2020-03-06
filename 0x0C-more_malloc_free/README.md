@@ -36,10 +36,6 @@ What you should learn from this project:
   * If malloc fails, return NULL
 
 
-
-* Write a program that multiplies two numbers.
-
-
 ### [4. realloc](./100-realloc.c)
 * Write a function that reallocates a memory block using malloc and free
   * where ptr is a pointer to the memory previously allocated with a call to malloc: malloc(old_size)
