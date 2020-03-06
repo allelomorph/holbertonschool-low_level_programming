@@ -38,6 +38,12 @@ C programming from the first trimester in Holberton's core curriculum. One direc
 ### [0x0A. C - argc, argv](./0x0A-argc_argv/)
 
 
+### [0x0B. C - malloc, free](./0x0B-malloc_free/)
+
+
+### [0x0C. C - More malloc, free](./0x0C-more_malloc_free/)
+
+
 ---
 
 ## Author
