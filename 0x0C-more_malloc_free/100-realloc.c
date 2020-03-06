@@ -28,17 +28,18 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 		free(ptr);
 		return (NULL);
 	}
+
 	if (ptr == NULL)
 	{
 		ptr = malloc(new_size);
 		return (ptr);
 	}
 
-	dest = malloc(new_size);
+	dest = malloc(sizeof(char) * new_size);
 	if (dest == NULL)
 		return (NULL);
 
-	for (i = 0; i < new_size; i++)
+	for (i = 0; i < old_size; i++)
 		dest[i] = src[i];
 
 	free(ptr);
