@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
- * dog_t - creates a new struct of type dog
+ * new_dog - creates a new struct of type dog
  *
  * @name: string for dog name passed to new struct
  *
@@ -11,7 +11,7 @@
  *
  * @owner: string for owner passed to new struct
  *
- * return: pointer to new dog struct, or NULL if function fails
+ * Return: pointer to new dog struct, or NULL if function fails
  */
 
 dog_t *new_dog(char *name, float age, char *owner)
