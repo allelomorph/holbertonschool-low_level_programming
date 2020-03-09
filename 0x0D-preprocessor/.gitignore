@@ -1,0 +1,13 @@
+# Ignore EMACS backup files
+*~
+
+# main c files
+# *-main.c
+
+# test executables
+?ex
+??ex
+???ex
+
+# Second, less understood form of autosave files
+"#*#"
