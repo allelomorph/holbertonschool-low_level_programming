@@ -13,8 +13,8 @@
 
 int main(int argc, char *argv[])
 {
-	int a = atoi(argv[1]);
-	int b = atoi(argv[3]);
+	int a;
+	int b;
 	int result;
 
 	if (argc != 4)
@@ -34,6 +34,9 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(100);
 	}
+
+	a = atoi(argv[1]);
+	b = atoi(argv[3]);
 
 	result = get_op_func(argv[2])(a, b);
 	printf("%d\n", result);
