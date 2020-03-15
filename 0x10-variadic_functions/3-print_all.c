@@ -45,6 +45,8 @@ void print_all(const char * const format, ...)
 
 /**
  * print_char - prints char passed as argument to variable list
+ *
+ * @args: variable args list passed from print_all
  */
 
 void print_char(va_list args)
@@ -54,6 +56,8 @@ void print_char(va_list args)
 
 /**
  * print_int - prints integer passed as an argument to variable list
+ *
+ * @args: variable args list passed from print_all
  */
 
 void print_int(va_list args)
@@ -63,6 +67,8 @@ void print_int(va_list args)
 
 /**
  * print_float - prints floating point passed as an argument to variable list
+ *
+ * @args: variable args list passed from print_all
  */
 
 void print_float(va_list args)
@@ -72,6 +78,8 @@ void print_float(va_list args)
 
 /**
  * print_string - prints string passed as an argument to variable list
+ *
+ * @args: variable args list passed from print_all
  */
 
 void print_string(va_list args)
