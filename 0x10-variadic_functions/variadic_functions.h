@@ -19,9 +19,9 @@ void print_all(const char * const format, ...);
  * struct print_formats - Struct p_forms
  *
  * @f_sym: format symbol given to main
- * @pf_tag: format tag passed as string to printf
  * @p_func: pointer to corresponding helper function
  */
+
 typedef struct print_formats
 {
 	char *f_sym;
