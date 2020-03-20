@@ -14,7 +14,7 @@ void free_list(list_t *head)
 	if (!head)
 		return;
 
-	while(head != NULL)
+	while (head != NULL)
 	{
 /* point to current head */
 		temp = head;
