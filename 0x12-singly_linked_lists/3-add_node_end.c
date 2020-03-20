@@ -64,7 +64,7 @@ char *_strdup(const char *str)
  * add_node_end - adds a new node at the end of a struct type
  * list_t linked list
  *
- * @head: pointer to pointer to last member of list
+ * @head: pointer to pointer to first member of list
  *
  * @str: string to be inlcuded as member str of new list_t struct node
  *
