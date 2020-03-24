@@ -12,18 +12,13 @@ void free_listint(listint_t *head)
 {
 	listint_t *temp;
 /*
- * frees from begining of list. do recursive solutions
+ * frees from beginning of list. do recursive solutions
  * from end of list exist?
  */
-	if (head)
+	while (head)
 	{
-		while (head)
-		{
-			temp = head;
-			head = head->next;
-			free(temp);
-		}
+		temp = head;
+		head = head->next;
+		free(temp);
 	}
-	else
-		return;
 }
