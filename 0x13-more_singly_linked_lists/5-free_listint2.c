@@ -17,9 +17,16 @@ void free_listint2(listint_t **head)
  */
 	while (*head)
 	{
-		temp = *head;
-		*head = (*head)->next;
-		free(temp);
+		if ((*head)->next)
+		{
+			temp = *head;
+			*head = (*head)->next;
+			free(temp);
+		}
+		else
+		{
+			free(*head);
+			*head = NULL;
+		}
 	}
-/*	free(head); why does the example have 9 frees? */
 }
