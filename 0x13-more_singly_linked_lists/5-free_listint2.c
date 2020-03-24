@@ -15,6 +15,10 @@ void free_listint2(listint_t **head)
  * frees from beginning of list. do recursive solutions
  * from end of list exist?
  */
+
+	if (head == NULL)
+		return;
+
 	while (*head)
 	{
 		if ((*head)->next)
