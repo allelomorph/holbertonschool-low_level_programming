@@ -72,7 +72,7 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 	size_t length;
 	listint_t *temp;
 
-	if (!head)
+	if (!head || !(*head))
 		return (-1);
 
 	length = listint_len(*head);
