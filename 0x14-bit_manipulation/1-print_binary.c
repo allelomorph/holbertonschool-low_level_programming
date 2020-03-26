@@ -1,48 +1,28 @@
 #include "holberton.h"
 
 /**
- * binary_to_uint - converts a binary number to an unsigned int
+ * print_binary - prints numeral in binary format
  *
- * @b: char string of digits to be converted
+ * @n: base 10 integer to be converted
  *
- * Return: converted value as unsigned int, or 0 if any char in string
- * is not 0 or 1, or if b is NULL
  */
 
-unsigned int binary_to_uint(const char *b)
+void print_binary(unsigned long int n)
 {
-	int len, i;
-	unsigned int bin = 0;
+	int len;
 
-	if (!b)
-		return (0);
+	if (n == 0)
+		putchar('0');
 
-	for (len = 0; b[len]; len++)
+/* length of binary notation in chars, with leading zeroes truncated */
+	for (len = 0; (n >> len) | 0; len++)
 	{}
-/*	printf("len: %d\n", len); */
+/* minus 1 to match the way binary powers of 2 start at rightmost digit, 2^0 */
 	len--;
-	for (i = 0; b[i]; i++, len--)
+/* start at leftmost digit to print left to right, and work backwards */
+	for (; len > -1; len--)
 	{
-/*		printf("loop at index: %i b[i]: %c\n", len, b[i]); */
-		if (b[i] == '1')
-		{
-			/*	printf("bin at top of loop:"); 
-			b_print(bin); 
-				bprint(2^(b[(len - i)]
-			printf("pow 2 : %i, %i \n", len, (1 << len)); */
-			bin += 1 << len;
-			continue;
-		}
-		else if (b[i] == '0')
-		{
-			continue;
-		}
-		else
-			return (0);
+/* print n / 2^len. & 1 compares to ..0001 to just return that digit */
+		putchar(((n >> len) & 1) + '0');
 	}
-/*	printf("str : %s\n", b);
-	printf("bin : ");
-	b_print(bin);
-	putchar('\n'); */
-	return (bin);
 }
