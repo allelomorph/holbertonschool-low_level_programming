@@ -15,13 +15,13 @@ int get_bit(unsigned long int n, unsigned int index)
 
 	if (n == ULONG_MAX)
 	{
-		if (index == 63)
-			return (1);
-		else
+		if (index != 63)
 		{
 			len++;
 			n = LONG_MAX;
 		}
+		else
+			return (1);
 	}
 
 /* length of binary notation in chars, with leading zeroes truncated */
@@ -32,5 +32,5 @@ int get_bit(unsigned long int n, unsigned int index)
 	if (index > (unsigned int)len)
 		return (-1);
 
-	return((n >> index) & 1);
+	return ((n >> index) & 1);
 }
