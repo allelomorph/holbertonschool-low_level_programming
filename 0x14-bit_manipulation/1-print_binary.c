@@ -12,7 +12,13 @@ void print_binary(unsigned long int n)
 	int len;
 
 	if (n == 0)
-		putchar('0');
+		_putchar('0');
+
+	if (n == ULONG_MAX)
+	{
+		_putchar('1');
+		n = LONG_MAX;
+		}
 
 /* length of binary notation in chars, with leading zeroes truncated */
 	for (len = 0; (n >> len) | 0; len++)
@@ -23,6 +29,6 @@ void print_binary(unsigned long int n)
 	for (; len > -1; len--)
 	{
 /* print n / 2^len. & 1 compares to ..0001 to just return that digit */
-		putchar(((n >> len) & 1) + '0');
+		_putchar(((n >> len) & 1) + '0');
 	}
 }
