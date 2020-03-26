@@ -18,7 +18,7 @@ void print_binary(unsigned long int n)
 	{
 		_putchar('1');
 		n = LONG_MAX;
-		}
+	}
 
 /* length of binary notation in chars, with leading zeroes truncated */
 	for (len = 0; (n >> len) | 0; len++)
