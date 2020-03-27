@@ -30,7 +30,7 @@ int get_bit(unsigned long int n, unsigned int index)
 /* minus 1 to match the way binary powers of 2 start at rightmost digit, 2^0 */
 	len--;
 	if (index > (unsigned int)len)
-	return (-1);
+		return (-1);
 
 	return ((n >> index) & 1);
 }
