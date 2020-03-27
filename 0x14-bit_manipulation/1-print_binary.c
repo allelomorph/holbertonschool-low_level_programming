@@ -11,6 +11,7 @@ void print_binary(unsigned long int n)
 {
 	int len, i;
 	long int temp;
+
 	if (n == 0)
 		_putchar('0');
 
@@ -21,10 +22,6 @@ void print_binary(unsigned long int n)
 		_putchar('1');
 		for (i = 62; i > -1; i--)
 		{
-/*			if (!((i + 1) % 4))
-				_putchar(' ');
-			if (!((i + 1) % 16))
-			_putchar(' '); */
 			_putchar(((temp >> i) & 1) + '0');
 		}
 	}
@@ -39,10 +36,6 @@ void print_binary(unsigned long int n)
 /* start at leftmost digit to print left to right, and work backwards */
 		for (; len > -1; len--)
 		{
-/*			if (!((len + 1) % 4))
-				_putchar(' ');
-			if (!((len + 1) % 16))
-			_putchar(' '); */
 /* print n / 2^len. & 1 compares to ..0001 to just return that digit */
 			_putchar(((temp >> len) & 1) + '0');
 		}
