@@ -22,7 +22,7 @@ int get_bit(unsigned long int n, unsigned int index)
 			return (1);
 
 		len++;
-		n -= (n >= (unsigned long int)LONG_MIN);
+		n -= ((unsigned long int)LONG_MIN);
 	}
 	temp_n = (long int)n;
 
