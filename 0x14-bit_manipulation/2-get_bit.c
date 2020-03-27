@@ -21,7 +21,7 @@ int get_bit(unsigned long int n, unsigned int index)
 			return (1);
 
 		len++;
-		n =  (n - LONG_MAX) - 1;
+		n -= ((unsigned long int)LONG_MAX + 1);
 	}
 
 /* length of binary notation in chars, with leading zeroes truncated */
