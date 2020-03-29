@@ -13,32 +13,31 @@
 
 int clear_bit(unsigned long int *n, unsigned int index)
 {
-	unsigned int len = 0;
 	long int temp_n;
+	int over_half = 0;
+
+	if (index > 63 || !n)
+		return (-1);
 
 	if (*n >= (unsigned long int)LONG_MIN)
 	{
+		*n -= (unsigned long int)LONG_MIN;
 		if (index == 63)
-		{
-			*n -= (unsigned long int)LONG_MIN;
 			return (1);
-		}
+
+		over_half = 1;
 	}
+
 	temp_n = (long int)*n;
-
-/* length of binary notation in chars, with leading zeroes truncated */
-	for (; (temp_n >> len) | 0; len++)
-	{}
-/* minus 1 to match the way binary powers of 2 start at rightmost digit, 2^0 */
-	len--;
-	if (index > len)
-		return (-1);
-
 	if ((temp_n >> index) & 1)
 	{
 		temp_n -= 1 << index;
 		*n = temp_n;
 	}
+	*n = (unsigned long int)temp_n;
+
+	if (over_half)
+		*n += (unsigned long int)LONG_MIN;
 
 	return (1);
 }
