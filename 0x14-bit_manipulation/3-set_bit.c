@@ -13,29 +13,27 @@
 
 int set_bit(unsigned long int *n, unsigned int index)
 {
-	int len = 0;
 	long int temp_n;
+
+	if (index > 63 || !n)
+		return (-1);
 
 	if (*n >= (unsigned long int)LONG_MIN)
 	{
 		if (index == 63)
 			return (1);
 
-		len++;
-		*n -= (unsigned long int)LONG_MIN;
+		*n = *n - (unsigned long int)LONG_MIN;
+		temp_n = (long int)*n;
+		temp_n = (temp_n | (1 << index));
+		*n = (unsigned long int)temp_n + (unsigned long int)LONG_MIN;
 	}
-	temp_n = (long int)*n;
-
-/* length of binary notation in chars, with leading zeroes truncated */
-	for (; (temp_n >> len) | 0; len++)
-	{}
-/* minus 1 to match the way binary powers of 2 start at rightmost digit, 2^0 */
-	len--;
-	if (index > (unsigned int)len)
-		return (-1);
-
-	temp_n = (temp_n | (1 << index));
-	*n = (unsigned long int)temp_n;
+	else
+	{
+		temp_n = (long int)*n;
+		temp_n = (temp_n | (1 << index));
+		*n = (unsigned long int)temp_n;
+	}
 
 	return (1);
 }
