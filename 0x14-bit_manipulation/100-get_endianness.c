@@ -1,7 +1,7 @@
-#include "holberton.h"
-
 #define LITTLE_ENDIAN 1
 #define BIG_ENDIAN 0
+
+/* BIG_ENDIAN and LITTLE_ENDIAN are also defined seperately in stdlib.h */
 
 /**
  * get_endianness - determines whether complie environment
