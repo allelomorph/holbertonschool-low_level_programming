@@ -14,10 +14,10 @@
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	int fd, r_bytes, w_bytes;
+	long int fd, r_bytes, w_bytes;
 	char *output;
 
-	output = malloc(sizeof(char) * (letters + 1));
+	output = malloc(sizeof(char) * letters);
 	if (!output || !filename)
 		return (0);
 
@@ -34,10 +34,6 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		free(output);
 		return (0);
 	}
-	else if (r_bytes < (ssize_t)letters)
-		output[r_bytes] = '\0';
-	else
-		output[letters] = '\0';
 
 	w_bytes = write(STDOUT_FILENO, output, r_bytes);
 	if (w_bytes < r_bytes)
