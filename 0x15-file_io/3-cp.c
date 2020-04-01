@@ -46,9 +46,8 @@ void dpf_error(char *readout, char *filename, int exit_c)
 int main(int argc, char **argv)
 {
 	long int file_from, file_to, r_bytes, w_bytes;
-	int c_ret[2];
 	char *buffer;
-	unsigned int i, bf_sz = 1024;
+	int close_v, bf_sz = 1024;
 
 	if (argc != 3)
 		dpf_error("Usage: cp file_from file_to", "", 97);
@@ -77,12 +76,11 @@ int main(int argc, char **argv)
 		}
 	} while (r_bytes == bf_sz);
 	free(buffer);
-	c_ret[0] = close(file_from);
-	c_ret[1] = close(file_to);
-	for (i = 0; i < 2; i++)
-	{
-		if (c_ret[i] < 0)
-			close_error(c_ret[i]);
-	}
+	close_v = close(file_from);
+	if (close_v < 0)
+		close_error(file_from);
+	close_v = close(file_to);
+	if (close_v < 0)
+		close_error(file_to);
 	return (0);
 }
