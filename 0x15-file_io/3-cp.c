@@ -39,8 +39,8 @@ void dpf_error(char *readout, char *filename, int exit_c)
 int main(int argc, char **argv)
 {
 	long int file_from, file_to, r_bytes, w_bytes;
-	char *buffer;
-	int close_v, bf_sz = 1024;
+	char buffer[1024];
+	int close_v;
 
 	if (argc != 3)
 		dpf_error("Usage: cp file_from file_to", "", 97);
@@ -50,30 +50,26 @@ int main(int argc, char **argv)
 		dpf_error("Error: Can't read from file ", argv[1], 98);
 
 	file_to = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, 00664);
-	buffer = malloc(sizeof(char) * bf_sz);
-	if (file_to < 0 || !buffer)
+	if (file_to < 0)
 		dpf_error("Error: Can't write to ", argv[2], 99);
 
 	do {
-		r_bytes = read(file_from, buffer, bf_sz);
+		r_bytes = read(file_from, buffer, 1024);
 		if (r_bytes < 0)
-		{
-			free(buffer);
 			dpf_error("Error: Can't read from file ", argv[1], 98);
-		}
+
 		w_bytes = write(file_to, buffer, r_bytes);
 		if (w_bytes < r_bytes)
-		{
-			free(buffer);
 			dpf_error("Error: Can't write to ", argv[2], 99);
-		}
-	} while (r_bytes == bf_sz);
-	free(buffer);
+
+	} while (r_bytes == 1024);
+
 	close_v = close(file_from);
 	if (close_v < 0)
 		close_error(file_from);
 	close_v = close(file_to);
 	if (close_v < 0)
 		close_error(file_to);
+
 	return (0);
 }
