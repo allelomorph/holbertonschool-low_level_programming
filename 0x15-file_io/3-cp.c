@@ -46,7 +46,7 @@ int main(int argc, char **argv)
 
 	do {
 		r_bytes = read(file_from, buffer, bf_sz);
-		printf("r_bytes: %li\n", r_bytes);
+/*		printf("r_bytes: %li\n", r_bytes); */
 		if (r_bytes < 0)
 		{
 			dprintf(2, "Error: Can't read from file %s\n", argv[1]);
@@ -55,7 +55,7 @@ int main(int argc, char **argv)
 		}
 
 		w_bytes = write(file_to, buffer, r_bytes);
-		printf("w_bytes: %li\n", w_bytes);
+/*		printf("w_bytes: %li\n", w_bytes); */
 		if (w_bytes < 0)
 		{
 			dprintf(2, "Error: Can't write to %s\n", argv[2]);
