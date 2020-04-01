@@ -2,7 +2,6 @@
 
 /**
  * close_error - helper to condense close error return to single line of code
- *
  * @fd: file descriptor that failed to close
  */
 
@@ -14,11 +13,8 @@ void close_error(long int fd)
 
 /**
  * dpf_error - helper to condense other error return to single line of code
- *
  * @readout: error message describing failure
- *
  * @filename: file that caused failure
- *
  * @exit_c: exit code
  */
 
@@ -30,11 +26,8 @@ void dpf_error(char *readout, char *filename, int exit_c)
 
 /**
  * main - entry point
- *
  * @argc: number of arguments to main, including filename of program
- *
  * @argv: array of strings containing arguments entered on command line
- *
  * Return: 0 on success
  */
 
@@ -69,7 +62,7 @@ int main(int argc, char **argv)
 			dpf_error("Error: Can't read from file ", argv[1], 98);
 		}
 		w_bytes = write(file_to, buffer, r_bytes);
-		if (w_bytes < 0)
+		if (w_bytes < r_bytes)
 		{
 			free(buffer);
 			dpf_error("Error: Can't write to ", argv[2], 99);
