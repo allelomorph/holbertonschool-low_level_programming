@@ -7,7 +7,7 @@
 
 void close_error(long int fd)
 {
-	dprintf(STDERR_FILENO, "Can't close fd %li\n", fd);
+	dprintf(STDERR_FILENO, "Error: Can't close fd %li\n", fd);
 	exit(100);
 }
 
