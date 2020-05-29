@@ -15,7 +15,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	hash_node_t *new, *temp;
 	char *key_copy, *value_copy;
 
-	if (key[0] == '\0' || key == NULL)
+	if (!ht || !(ht->array) || key[0] == '\0' || key == NULL)
 		return (0);
 
 	value_copy = strdup(value);
