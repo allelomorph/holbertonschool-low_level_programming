@@ -1,7 +1,7 @@
 # holbertonschool-low_level_programming
 
 ## Description
-C programming from the first trimester in Holberton's core curriculum. One directory per project, mandatory tasks are files `?-*.c`, advanced tasks `???-*.c`.
+C programming projects from Holberton's core curriculum, primarily in the first trimester. One directory per project, mandatory tasks are files `?-*.c`, advanced tasks `???-*.c`.
 
 ---
 
@@ -43,6 +43,38 @@ C programming from the first trimester in Holberton's core curriculum. One direc
 
 ### [0x0C. C - More malloc, free](./0x0C-more_malloc_free/)
 
+
+### [0x0D. C - Preprocessor](./0x0D-preprocessor/)
+
+
+### [0x0E. C - Structures, typedef](./0x0E-structures_typedef/)
+
+
+### [0x0F. C - Function pointers](./0x0F-function_pointers/)
+
+
+### [0x10. C - Variadic functions](./0x10-variadic_functions/)
+
+
+### [0x12-singly_linked_lists](./0x12-singly_linked_lists/)
+
+
+### [0x13. C - More singly linked lists](./0x13-more_singly_linked_lists/)
+
+
+### [0x14. C - Bit manipulation](./0x14-bit_manipulation/)
+
+
+### [0x15. C - File I/O](./0x15-file_io/)
+
+
+### [0x17. C - Doubly linked lists](./0x17-doubly_linked_lists/)
+
+
+### [0x18. C - Dynamic libraries](./0x18-dynamic_libraries/)
+
+
+### [0x1A. C - Hash tables](./0x1A-hash_tables/)
 
 ---
 
