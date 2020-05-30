@@ -1,13 +1,13 @@
 #include "hash_tables.h"
 
 /**
- * shash_table_create - creates a hash table hash table sorted by alphabetic
- *order
- * of keys
+ * shash_table_create - creates a hash table that can be sorted into
+ * a doubly linked list
  * @size: size of the array to be created
  *
  * Return: pointer to the newly created hash table, or NULL on failure
  */
+
 shash_table_t *shash_table_create(unsigned long int size)
 {
 	shash_table_t *new_table;
@@ -43,6 +43,7 @@ shash_table_t *shash_table_create(unsigned long int size)
  * @ht: sorted hash table to update with new node
  * @new: newly allocated node
  */
+
 void dbl_ll_set(shash_table_t *ht, shash_node_t *new)
 {
 	shash_node_t *temp;
@@ -92,6 +93,7 @@ void dbl_ll_set(shash_table_t *ht, shash_node_t *new)
  *
  * Return: 1 on success, 0 on failure
  */
+
 int shash_table_set(shash_table_t *ht, const char *key, const char *value)
 {
 	unsigned long int index;
@@ -131,7 +133,7 @@ int shash_table_set(shash_table_t *ht, const char *key, const char *value)
 	new->value = value_copy;
 	new->next = ht->array[index];
 	ht->array[index] = new;
-/* now that node is placed in the table, we can sort it into the DLL */
+/* now that node is placed in table, it can be sorted into the DLL */
 	dbl_ll_set(ht, new);
 	return (1);
 }
@@ -145,6 +147,7 @@ int shash_table_set(shash_table_t *ht, const char *key, const char *value)
  *
  * Return: associated value, or NULL if key is not found
  */
+
 char *shash_table_get(const shash_table_t *ht, const char *key)
 {
 	unsigned long int index;
@@ -173,6 +176,7 @@ char *shash_table_get(const shash_table_t *ht, const char *key)
  * sorted linked list
  * @ht: sorted hash table to be printed
  */
+
 void shash_table_print(const shash_table_t *ht)
 {
 	shash_node_t *temp;
@@ -205,6 +209,7 @@ void shash_table_print(const shash_table_t *ht)
  * in sorted linked list
  * @ht: sorted hash table to be printed
  */
+
 void shash_table_print_rev(const shash_table_t *ht)
 {
 	shash_node_t *temp;
@@ -236,6 +241,7 @@ void shash_table_print_rev(const shash_table_t *ht)
  * shash_table_delete - deletes a sorted hash table
  * @ht: sorted hash table to have memory freed
  */
+
 void shash_table_delete(shash_table_t *ht)
 {
 	unsigned long int index, j;
