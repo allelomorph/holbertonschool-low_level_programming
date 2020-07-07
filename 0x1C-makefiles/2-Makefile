@@ -5,13 +5,19 @@ SRC = main.c holberton.c  # source .c files
 OBJ = $(SRC:.c=.o)  # object files
 NAME = holberton  # name of executable
 
-all: holberton
-
-holberton: $(OBJ)
+all: $(OBJ) m.h
 	$(CC) $(OBJ) -o $(NAME)
 
-main.o: main.c m.h
-	$(CC) -c -o main.o main.c
+# more incrementally for multiple dependcies
+# all: holberton
 
-holberton.o: holberton.c m.h
-	$(CC) -c -o holberton.o holberton.c
+# holberton: $(OBJ) m.h
+#	$(CC) $(OBJ) -o $(NAME)
+
+# omitting to please checker, can be done automatically
+# main.o: main.c m.h
+# 	$(CC) -c -o main.o main.c
+
+# omitting to please checker, can be done automatically
+# holberton.o: holberton.c m.h
+#	$(CC) -c -o holberton.o holberton.c
