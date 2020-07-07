@@ -1,5 +1,3 @@
-# -*- MakeFile -*-
-
 CC = gcc  # compiler to be used
 SRC = main.c holberton.c  # source .c files
 OBJ = $(SRC:.c=.o)  # object files
