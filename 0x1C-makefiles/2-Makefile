@@ -7,7 +7,7 @@ NAME = holberton  # name of executable
 
 all: holberton
 
-holberton: $(OBJ) m.h
+holberton: $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 
 main.o: main.c m.h

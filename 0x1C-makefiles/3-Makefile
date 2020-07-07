@@ -4,11 +4,11 @@ CC = gcc  # compiler to be used
 SRC = main.c holberton.c  # source .c files
 OBJ = $(SRC:.c=.o)  # object files
 NAME = holberton  # name of executable
-RM = rm  # program to delete files
+RM = rm -f  # program to delete files
 
 all: holberton
 
-holberton: $(OBJ) m.h
+holberton: $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 
 main.o: main.c m.h
@@ -18,10 +18,10 @@ holberton.o: holberton.c m.h
 	$(CC) -c -o holberton.o holberton.c
 
 clean:
-	$(RM) -f *~ $(NAME)
+	$(RM) *~ $(NAME)
 
 oclean:
-	$(RM) -f $(OBJ)
+	$(RM) $(OBJ)
 
 fclean: clean oclean
 
