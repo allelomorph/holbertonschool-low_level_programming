@@ -1,28 +1,13 @@
 # -*- MakeFile -*-
 
-CC = gcc  # compiler to be used
-SRC = main.c holberton.c  # source .c files
-OBJ = $(SRC:.c=.o)  # object files
-NAME = holberton  # name of executable
-RM = rm -f  # program to delete files
+CC = gcc
+SRC = main.c holberton.c
+OBJ = $(SRC:.c=.o)
+NAME = holberton
+RM = rm -f
 
 all: $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
-
-# more incrementally for multiple dependcies
-# all: holberton
-
-# naming header to trigger recompilation on its update
-# holberton: $(OBJ) m.h
-#	$(CC) $(OBJ) -o $(NAME)
-
-# omitting to please checker, can be done automatically
-# main.o: main.c m.h
-# 	$(CC) -c -o main.o main.c
-
-# omitting to please checker, can be done automatically
-# holberton.o: holberton.c m.h
-#	$(CC) -c -o holberton.o holberton.c
 
 clean:
 	$(RM) *~ $(NAME)
