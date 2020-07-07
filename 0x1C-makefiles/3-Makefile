@@ -6,12 +6,13 @@ OBJ = $(SRC:.c=.o)  # object files
 NAME = holberton  # name of executable
 RM = rm -f  # program to delete files
 
-all: $(OBJ) m.h
+all: $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 
 # more incrementally for multiple dependcies
 # all: holberton
 
+# naming header to trigger recompilation on its update
 # holberton: $(OBJ) m.h
 #	$(CC) $(OBJ) -o $(NAME)
 
