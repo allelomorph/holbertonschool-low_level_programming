@@ -1,0 +1,35 @@
+# -*- MakeFile -*-
+
+CC = gcc
+SRC = main.c holberton.c
+OBJ = $(SRC:.c=.o)
+NAME = holberton
+RM = rm -f
+
+all: $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
+
+# more incrementally for files with multiple interdependence
+# all: holberton
+
+# naming header to recompile if it is updated
+# holberton: m.h $(OBJ)
+	# $(CC) $(OBJ) -o $(NAME)
+
+# implicit if not needed for multiple dependencies
+# main.o: main.c m.h
+	# $(CC) -c -o main.o main.c
+
+# implicit if not needed for multiple dependencies
+# holberton.o: holberton.c m.h
+	# $(CC) -c -o holberton.o holberton.c
+
+clean:
+	$(RM) *~ $(NAME)
+
+oclean:
+	$(RM) $(OBJ)
+
+fclean: clean oclean
+
+re: oclean all
