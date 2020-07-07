@@ -1,6 +1,6 @@
-CC = gcc  # compiler to be used
-SRC = main.c holberton.c  # source .c files
-OBJ = $(SRC:.c=.o)  # object files
-NAME = holberton  # name of executable
+CC = gcc
+SRC = main.c holberton.c
+OBJ = $(SRC:.c=.o)
+NAME = holberton
 all: $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
