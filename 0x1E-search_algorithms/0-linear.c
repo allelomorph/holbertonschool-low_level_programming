@@ -3,9 +3,9 @@
 /**
  * linear_search - searches for a value in an integer array using a linear
  * search algorithm
- * @array: pointer to first element of array to seach
+ * @array: pointer to first element of array to search
  * @size: number of elements in array
- * @value: value ot search for
+ * @value: value to search for
  *
  * Return: first index containing `value`, or -1 if `value` not found or
  * `array` is NULL
