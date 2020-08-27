@@ -30,32 +30,28 @@ size_t min(size_t a, size_t b)
 
 int jump_search(int *array, size_t size, int value)
 {
-	size_t a, b;
+	size_t left, right, jump;
 
 	if (!array)
 		return (-1);
 
-	a = 0;
-	b = sqrt(size);
+	jump = sqrt(size);
 
-	while (array[a] < value && a < size)
+	for (left = 0, right = jump;
+	     array[left] < value && left < size && right < size;
+	     left = right, right += jump)
 	{
-		printf("Value checked array[%lu] = [%d]\n", a, array[a]);
-		/* `|| ...` causes 'found' msg even when value not in array */
-		if (array[b] >= value || b >= size)
-		{
-			printf("Value found between indexes [%lu] and [%lu]\n", a, b);
-			break;
-		}
-		a = b;
-		b = b + sqrt(size);
+		printf("Value checked array[%lu] = [%d]\n", left, array[left]);
 	}
 
-	for (; a <= min(b, size - 1); a++)
+	/* causes 'found' msg even when value not in array */
+	printf("Value found between indexes [%lu] and [%lu]\n", left, right);
+
+	for (; left <= min(right, size - 1); left++)
 	{
-		printf("Value checked array[%lu] = [%d]\n", a, array[a]);
-		if (array[a] == value)
-			return (a);
+		printf("Value checked array[%lu] = [%d]\n", left, array[left]);
+		if (array[left] == value)
+			return (left);
 	}
 
 	return (-1);
