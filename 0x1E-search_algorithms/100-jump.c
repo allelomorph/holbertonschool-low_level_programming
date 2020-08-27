@@ -37,11 +37,11 @@ int jump_search(int *array, size_t size, int value)
 
 	jump = sqrt(size);
 
-	for (left = 0, right = jump;
-	     array[left] < value && left < size && right < size;
+	for (right = 0; array[right] < value && right < size;
 	     left = right, right += jump)
 	{
-		printf("Value checked array[%lu] = [%d]\n", left, array[left]);
+		printf("Value checked array[%lu] = [%d]\n",
+		       right, array[right]);
 	}
 
 	/* causes 'found' msg even when value not in array */
