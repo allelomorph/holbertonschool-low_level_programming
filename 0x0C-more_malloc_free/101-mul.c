@@ -117,7 +117,7 @@ int main(int argc, char **argv)
 
 	if (argc != 3 || !stringIsPosInt(argv[1]) ||
 	    !stringIsPosInt(argv[2]))
-		err(98);
+		error(98);
 
 	for (i = 0, av1_len = 0; argv[1][i]; i++)
 		av1_len++;
@@ -128,7 +128,7 @@ int main(int argc, char **argv)
 	prod_len = av1_len + av2_len;
 	prod_digits = initDigitArray(prod_len);
 	if (prod_digits == NULL)
-		err(98);
+		error(98);
 
 	stringIntMultiply(prod_digits, argv[1], argv[2], av1_len, av2_len);
 
