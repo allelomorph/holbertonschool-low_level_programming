@@ -74,7 +74,25 @@ C programming projects from Holberton's core curriculum, primarily in the first 
 ### [0x18. C - Dynamic libraries](./0x18-dynamic_libraries/)
 
 
+### [0x19. C - Stacks, Queues - LIFO, FIFO](../monty/)
+* Project 0x19 found in separate repo `monty/`.
+
+
 ### [0x1A. C - Hash tables](./0x1A-hash_tables/)
+
+
+### [0x1B. C - Sorting algorithms & Big O](../sorting_algorithms/)
+* Project 0x1B found in separate repo `sorting_algorithms/`.
+
+
+### [0x1C. C - Makefiles](./0x1C-makefiles/)
+
+
+### [0x1D. C - Binary trees](../binary_trees/)
+* Project 0x1D found in separate repo `binary_trees/`.
+
+
+### [0x1E. C - Search Algorithms](./0x1E-search_algorithms/)
 
 ---
 
