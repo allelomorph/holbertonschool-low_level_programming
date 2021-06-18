@@ -56,6 +56,10 @@ C programming projects from Holberton's core curriculum, primarily in the first 
 ### [0x10. C - Variadic functions](./0x10-variadic_functions/)
 
 
+### [0x11. C - printf](https://github.com/allelomorph/printf)
+Project 0x11 found in separate repo [`printf/`](https://github.com/allelomorph/printf).
+
+
 ### [0x12. C - Singly linked lists](./0x12-singly_linked_lists/)
 
 
@@ -66,6 +70,10 @@ C programming projects from Holberton's core curriculum, primarily in the first 
 
 
 ### [0x15. C - File I/O](./0x15-file_io/)
+
+
+### [0x16. C - Simple Shell](https://github.com/allelomorph/simple_shell)
+Project 0x16 found in separate repo [`simple_shell/`](https://github.com/allelomorph/simple_shell).
 
 
 ### [0x17. C - Doubly linked lists](./0x17-doubly_linked_lists/)
