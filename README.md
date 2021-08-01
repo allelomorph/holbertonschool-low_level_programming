@@ -17,13 +17,17 @@ Introduction to function declarations and definitions, scope of variables, and n
 ### [(539) 0x03. C - Debugging](./0x03-debugging/)
 Introduction to debugging and troubleshooting C programs.
 
-### [0x04. C - More functions, more nested loops](./0x04-more_functions_nested_loops/)
+### [(215) 0x04. C - More functions, more nested loops](./0x04-more_functions_nested_loops/)
+Expanding on concepts introduced in [(213) 0x01. C - Variables, if, else, while](./0x01-variables_if_else_while/) and [(214) 0x02. C - Functions, nested loops](./0x02-functions_nested_loops/).
 
-### [0x05. C - Pointers, arrays and strings](./0x05-pointers_arrays_strings/)
+### [(216) 0x05. C - Pointers, arrays and strings](./0x05-pointers_arrays_strings/)
+Introduction to pointers and array navigation.
 
-### [0x06. C - More pointers, arrays and strings](./0x06-pointers_arrays_strings/)
+### [(217) 0x06. C - More pointers, arrays and strings](./0x06-pointers_arrays_strings/)
+Continued practice with pointers and array navigation.
 
-### [0x07. C - Even more pointers, arrays and strings](./0x07-pointers_arrays_strings/)
+### [(218) 0x07. C - Even more pointers, arrays and strings](./0x07-pointers_arrays_strings/)
+Further practice with pointers and array navigation, with a focus on multidimensional arrays.
 
 ### [0x08. C - Recursion](./0x08-recursion/)
 
