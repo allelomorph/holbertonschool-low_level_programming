@@ -93,7 +93,8 @@ Write a blog post that explains all the steps of compilation. Use command lines 
 * Share your blog post at least on LinkedIn
 * Please, remember that these blogs must be written in English to further your technical ability in a variety of settings
 
-[https://www.linkedin.com/pulse/what-happens-when-you-type-gcc-linux-samuel-pomeroy](https://www.linkedin.com/pulse/what-happens-when-you-type-gcc-linux-samuel-pomeroy)
+Blog: [What happens when you type 'gcc' in Linux?](https://www.linkedin.com/pulse/what-happens-when-you-type-gcc-linux-samuel-pomeroy)\
+Share: [LinkedIn](https://www.linkedin.com/posts/activity-6631078071464194049-_sZ-)
 
 ## Advanced Tasks
 
