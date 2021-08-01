@@ -29,13 +29,17 @@ Continued practice with pointers and array navigation.
 ### [(218) 0x07. C - Even more pointers, arrays and strings](./0x07-pointers_arrays_strings/)
 Further practice with pointers and array navigation, with a focus on multidimensional arrays.
 
-### [0x08. C - Recursion](./0x08-recursion/)
+### [(219) 0x08. C - Recursion](./0x08-recursion/)
+Introduction to recursion.
 
-### [0x09. C - Static libraries](./0x09-static_libraries/)
+### [(220) 0x09. C - Static libraries](./0x09-static_libraries/)
+Introduction to static libraries, use of `ar`, `ranlib`, `nm`.
 
-### [0x0A. C - argc, argv](./0x0A-argc_argv/)
+### [(221) 0x0A. C - argc, argv](./0x0A-argc_argv/)
+Introduction to the argument count and argument vector to `main` in C.
 
-### [0x0B. C - malloc, free](./0x0B-malloc_free/)
+### [(222) 0x0B. C - malloc, free](./0x0B-malloc_free/)
+Introduction to dynamic vs automatic memory allocation, manual memory management.
 
 ### [0x0C. C - More malloc, free](./0x0C-more_malloc_free/)
 

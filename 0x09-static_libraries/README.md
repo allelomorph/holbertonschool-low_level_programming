@@ -1,17 +1,30 @@
-# 0x09. C - Static libraries
-
-## Description
-What you should learn from this project:
-
-* What is a static library, how does it work, how to create one, and how to use it
-* Basic usage of ar, ranlib, nm
+# (220) 0x09. C - Static libraries
+Foundations > Low-level programming & Algorithm > Hatching out
 
 ---
 
-### [0. libholberton.a](./libholberton.a)
-* Create the static library libholberton.a containing all the functions listed below:
+### Project author
+Julien Barbier
 
-```int _putchar(char c);
+### Assignment dates
+02-28-2020 to 03-02-2020
+
+### Description
+Introduction to static libraries, use of `ar`, `ranlib`, `nm`.
+
+### Requirements
+
+### Provided file(s)
+
+---
+
+## Mandatory Tasks
+
+### :white_check_mark: 0. A library is not a luxury but one of the necessities of life
+Create the static library `libmy.a` containing all the functions listed below:
+
+```
+int _putchar(char c);
 int _islower(int c);
 int _isalpha(int c);
 int _abs(int n);
@@ -33,10 +46,28 @@ char *_strpbrk(char *s, char *accept);
 char *_strstr(char *haystack, char *needle);
 ```
 
-### [1. create_static_lib.sh](./create_static_lib.sh)
-* Create a script called create_static_lib.sh that creates a static library called liball.a from all the .c files that are in the current directory.
+File(s): [`libmy.a`](./libmy.a)\
+Compiled: `gcc -std=gnu89 main.c -L. -lmy -o quote`
+
+### :white_check_mark: 1. Without libraries what have we? We have no past and no future
+Create a script called `create_static_lib.sh` that creates a static library called `liball.a` from all the `.c` files that are in the current directory.
+
+File(s): [`create_static_lib.sh`](./create_static_lib.sh)\
+
+### :white_check_mark: 2. Either write something worth reading or do something worth writing
+Write a blog post on C static libraries. It should cover:
+
+* Why use libraries
+* How they work
+* How to create them
+* How to use them
+
+Your posts should have examples and at least one picture, at the top. Publish your blog post on Medium or LinkedIn, and share it at least on LinkedIn.
+
+Blog: [Static Libraries in C](https://www.linkedin.com/pulse/static-dynamic-libraries-c-samuel-pomeroy)\
+Share: [LinkedIn](https://www.linkedin.com/posts/activity-6640151373377867777-L5XD)
 
 ---
 
-## Author
+## Student
 * **Samuel Pomeroy** - [allelomorph](github.com/allelomorph)
