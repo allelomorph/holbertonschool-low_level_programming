@@ -10,7 +10,7 @@ Julien Barbier
 03-03-2020 to 03-04-2020
 
 ### Description
-Introduction to dynamic vs automatic memory allocation, manual memory management.
+Introduction to dynamic vs automatic memory allocation and manual memory management.
 
 ### Requirements
 * The only C standard library functions allowed are `malloc` and `free`. Any use of functions like `printf`, `puts`, `calloc`, `realloc` etc… is forbidden
