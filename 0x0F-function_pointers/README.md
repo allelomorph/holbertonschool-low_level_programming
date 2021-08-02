@@ -144,7 +144,7 @@ Compiled: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 3-main.c 3-op_function
 
 ## Advanced Tasks
 
-### 4. Most hackers are young because young people tend to be adaptable. As long as you remain adaptable, you can always be a good hacker
+### :white_large_square: 4. Most hackers are young because young people tend to be adaptable. As long as you remain adaptable, you can always be a good hacker
 Write a program that prints the opcodes of its own main function.
 
 * Usage: `./main number_of_bytes`
