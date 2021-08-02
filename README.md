@@ -39,15 +39,19 @@ Introduction to static libraries, use of `ar`, `ranlib`, `nm`.
 Introduction to the argument count and argument vector to `main` in C.
 
 ### [(222) 0x0B. C - malloc, free](./0x0B-malloc_free/)
-Introduction to dynamic vs automatic memory allocation, manual memory management.
+Introduction to dynamic vs automatic memory allocation and manual memory management.
 
-### [0x0C. C - More malloc, free](./0x0C-more_malloc_free/)
+### [(223) 0x0C. C - More malloc, free](./0x0C-more_malloc_free/)
+Continued practice with dynamic memory allocation and manual memory management.
 
-### [0x0D. C - Preprocessor](./0x0D-preprocessor/)
+### [(224) 0x0D. C - Preprocessor](./0x0D-preprocessor/)
+Introduction to `gcc` preprocessor macro sytnax.
 
-### [0x0E. C - Structures, typedef](./0x0E-structures_typedef/)
+### [(225) 0x0E. C - Structures, typedef](./0x0E-structures_typedef/)
+Introduction to structures and type defintions in C.
 
-### [0x0F. C - Function pointers](./0x0F-function_pointers/)
+### [(226) 0x0F. C - Function pointers](./0x0F-function_pointers/)
+Introduction to function pointers in C.
 
 ### [0x10. C - Variadic functions](./0x10-variadic_functions/)
 
