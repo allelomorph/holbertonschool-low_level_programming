@@ -18,7 +18,7 @@ Introduction to function declarations and definitions, scope of variables, and n
 Introduction to debugging and troubleshooting C programs.
 
 ### [(215) 0x04. C - More functions, more nested loops](./0x04-more_functions_nested_loops/)
-Expanding on concepts introduced in [(213) 0x01. C - Variables, if, else, while](./0x01-variables_if_else_while/) and [(214) 0x02. C - Functions, nested loops](./0x02-functions_nested_loops/).
+Continued practice with functions, variables and nested loops.
 
 ### [(216) 0x05. C - Pointers, arrays and strings](./0x05-pointers_arrays_strings/)
 Introduction to pointers and array navigation.

@@ -10,7 +10,7 @@ Julien Barbier
 02-13-2020 to 02-14-2020
 
 ### Description
-Expanding on concepts introduced in [(213) 0x01. C - Variables, if, else, while](./0x01-variables_if_else_while/) and [(214) 0x02. C - Functions, nested loops](./0x02-functions_nested_loops/).
+Continued practice with functions, variables and nested loops.
 
 ### Requirements
 * You are not allowed to use global variables
