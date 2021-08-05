@@ -55,8 +55,10 @@ Introduction to function pointers in C.
 
 ### [0x10. C - Variadic functions](./0x10-variadic_functions/)
 
-### [0x11. C - printf](https://github.com/allelomorph/printf)
-Project 0x11 found in separate repo [`printf/`](https://github.com/allelomorph/printf).
+### [(228) 0x11. C - printf](https://github.com/allelomorph/printf)
+First team project, building a clone of glibc `printf`.
+* Project [profile](./0x11-printf/)
+* Project repo: [`printf/`](https://github.com/allelomorph/printf)
 
 ### [0x12. C - Singly linked lists](./0x12-singly_linked_lists/)
 
@@ -66,25 +68,30 @@ Project 0x11 found in separate repo [`printf/`](https://github.com/allelomorph/p
 
 ### [0x15. C - File I/O](./0x15-file_io/)
 
-### [0x16. C - Simple Shell](https://github.com/allelomorph/simple_shell)
-Project 0x16 found in separate repo [`simple_shell/`](https://github.com/allelomorph/simple_shell).
+### [(235) 0x16. C - Simple Shell](https://github.com/allelomorph/simple_shell)
+Second team project, building a clone of `dash`, or the `sh` that comes with Ubuntu 14.04.
+* Project [profile](./0x16-simple_shell/)
+* Project repo: [`simple_shell/`](https://github.com/allelomorph/simple_shell)
 
 ### [0x17. C - Doubly linked lists](./0x17-doubly_linked_lists/)
 
 ### [0x18. C - Dynamic libraries](./0x18-dynamic_libraries/)
 
-### [0x19. C - Stacks, Queues - LIFO, FIFO](https://github.com/allelomorph/monty)
-Project 0x19 found in separate repo [`monty/`](https://github.com/allelomorph/monty).
+### [(249) 0x19. C - Stacks, Queues - LIFO, FIFO](https://github.com/allelomorph/monty)
+Third team project. Introduction to stacks and queues as varieties of linked lists, and implementation of a byte code interpreter.
+* Project [profile](./0x19-monty/)
+* Project repo: [`monty/`](https://github.com/allelomorph/monty)
 
 ### [0x1A. C - Hash tables](./0x1A-hash_tables/)
 
-### [0x1B. C - Sorting algorithms & Big O](https://github.com/allelomorph/sorting_algorithms/)
-Project 0x1B found in separate repo [`sorting_algorithms/`](https://github.com/allelomorph/sorting_algorithms/).
+### [(248) 0x1B. C - Sorting algorithms & Big O](https://github.com/allelomorph/sorting_algorithms/)
+Fourth team project. Introduction to popular sorting algorithms, and using big O notation to indicate time and space complexity.
+* Project profile, repo: [`sorting_algorithms/`](https://github.com/allelomorph/sorting_algorithms/).
 
 ### [0x1C. C - Makefiles](./0x1C-makefiles/)
 
 ### [0x1D. C - Binary trees](https://github.com/allelomorph/binary_trees/)
-Project 0x1D found in separate repo [`binary_trees/`](https://github.com/allelomorph/binary_trees/).
+* Project profile, repo: [`binary_trees/`](https://github.com/allelomorph/binary_trees/).
 
 ### [0x1E. C - Search Algorithms](./0x1E-search_algorithms/)
 
