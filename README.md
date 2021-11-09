@@ -53,16 +53,19 @@ Introduction to structures and type defintions in C.
 ### [(226) 0x0F. C - Function pointers](./0x0F-function_pointers/)
 Introduction to function pointers in C.
 
-### [0x10. C - Variadic functions](./0x10-variadic_functions/)
+### [(227) 0x10. C - Variadic functions](./0x10-variadic_functions/)
+Introduction to functions in C that can take an indeterminate number of parameters.
 
 ### [(228) 0x11. C - printf](https://github.com/allelomorph/printf)
 First team project, building a clone of glibc `printf`.
 * Project [profile](./0x11-printf/)
 * Project repo: [`printf/`](https://github.com/allelomorph/printf)
 
-### [0x12. C - Singly linked lists](./0x12-singly_linked_lists/)
+### [(229) 0x12. C - Singly linked lists](./0x12-singly_linked_lists/)
+Introduction to common data structures as expressed in C, beginning with singly-linked lists.
 
-### [0x13. C - More singly linked lists](./0x13-more_singly_linked_lists/)
+### [(230) 0x13. C - More singly linked lists](./0x13-more_singly_linked_lists/)
+Continued practice using singly-linked lists.
 
 ### [0x14. C - Bit manipulation](./0x14-bit_manipulation/)
 
