@@ -27,11 +27,11 @@ Introduction to common data structures as expressed in C, beginning with singly-
 ### :white_check_mark: 0. Print list
 Write a function that prints all the elements of a `list_t` list.
 
-    Prototype: `size_t print_list(const list_t *h);`
-    Return: the number of nodes
-    Format: see example
-    If `str` is `NULL`, print `[0] (nil)`
-    You are allowed to use `printf`
+* Prototype: `size_t print_list(const list_t *h);`
+* Return: the number of nodes
+* Format: see example
+* If `str` is `NULL`, print `[0] (nil)`
+* You are allowed to use `printf`
 
 File(s): [`0-print_list.c`](./0-print_list.c)\
 Compiled: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 0-main.c 0-print_list.c -o a`
@@ -39,7 +39,7 @@ Compiled: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 0-main.c 0-print_list.
 ### :white_check_mark: 1. List length
 Write a function that returns the number of elements in a linked `list_t` list.
 
-    Prototype: `size_t list_len(const list_t *h);`
+* Prototype: `size_t list_len(const list_t *h);`
 
 File(s): [`1-list_len.c`](./1-list_len.c)\
 Compiled: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 1-main.c 1-list_len.c -o b`
@@ -47,10 +47,10 @@ Compiled: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 1-main.c 1-list_len.c 
 ### :white_check_mark: 2. Add node
 Write a function that adds a new node at the beginning of a `list_t` list.
 
-    Prototype: `list_t *add_node(list_t **head, const char *str);`
-    Return: the address of the new element, or `NULL` if it failed
-    `str` needs to be duplicated
-    You are allowed to use `strdup`
+* Prototype: `list_t *add_node(list_t **head, const char *str);`
+* Return: the address of the new element, or `NULL` if it failed
+* `str` needs to be duplicated
+* You are allowed to use `strdup`
 
 File(s): [`2-add_node.c`](./2-add_node.c)\
 Compiled: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 2-main.c 2-add_node.c 0-print_list.c -o c`
@@ -58,10 +58,10 @@ Compiled: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 2-main.c 2-add_node.c 
 ### :white_check_mark: 3. Add node at the end
 Write a function that adds a new node at the end of a list_t list.
 
-    Prototype: `list_t *add_node_end(list_t **head, const char *str);`
-    Return: the address of the new element, or `NULL` if it failed
-    `str` needs to be duplicated
-    You are allowed to use `strdup`
+* Prototype: `list_t *add_node_end(list_t **head, const char *str);`
+* Return: the address of the new element, or `NULL` if it failed
+* `str` needs to be duplicated
+* You are allowed to use `strdup`
 
 File(s): [`3-print_all.c`](./3-print_all.c)\
 Compiled: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 3-main.c 3-print_all.c -o d`
@@ -69,7 +69,7 @@ Compiled: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 3-main.c 3-print_all.c
 ### :white_check_mark: 4. Free list
 Write a function that frees a `list_t` list.
 
-    Prototype: `void free_list(list_t *head);`
+* Prototype: `void free_list(list_t *head);`
 
 File(s): [`4-free_list.c`](./4-free_list.c)\
 Compiled: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 4-main.c 4-free_list.c 3-add_node_end.c 0-print_list.c -o e`
@@ -79,7 +79,7 @@ Compiled: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 4-main.c 4-free_list.c
 ### :white_check_mark: 5. The Hare and the Tortoise
 Write a function that prints `You're beat! and yet, you must allow,\nI bore my house upon my back!\n` before the main function is executed.
 
-    You are allowed to use the `printf` function
+* You are allowed to use the `printf` function
 
 File(s): [`100-first.c`](./100-first.c)\
 Compiled: `gcc -Wall -pedantic -Werror -Wextra -std=gnu89 100-main.c 100-first.c -o first`
