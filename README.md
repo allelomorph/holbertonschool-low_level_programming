@@ -67,9 +67,11 @@ Introduction to common data structures as expressed in C, beginning with singly-
 ### [(230) 0x13. C - More singly linked lists](./0x13-more_singly_linked_lists/)
 Continued practice using singly-linked lists.
 
-### [0x14. C - Bit manipulation](./0x14-bit_manipulation/)
+### [(232) 0x14. C - Bit manipulation](./0x14-bit_manipulation/)
+Introduction to operations that alter individiual bit values.
 
-### [0x15. C - File I/O](./0x15-file_io/)
+### [(234) 0x15. C - File I/O](./0x15-file_io/)
+Reading from and writing to files in C.
 
 ### [(235) 0x16. C - Simple Shell](https://github.com/allelomorph/simple_shell)
 Second team project, building a clone of `dash`, or the `sh` that comes with Ubuntu 14.04.
