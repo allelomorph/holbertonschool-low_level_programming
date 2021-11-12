@@ -38,7 +38,7 @@ Second team project, building a clone of `dash`, or the `sh` that comes with Ubu
   * `signal(2)`
   * `stat(2)`
   * `lstat(2)`
-  * `fstat(2)
+  * `fstat(2)`
   * `strtok(3)`
   * `wait(2)`
   * `waitpid(2)`
