@@ -78,22 +78,26 @@ Second team project, building a clone of `dash`, or the `sh` that comes with Ubu
 * Project [profile](./0x16-simple_shell/)
 * Project repo: [`simple_shell/`](https://github.com/allelomorph/simple_shell)
 
-### [0x17. C - Doubly linked lists](./0x17-doubly_linked_lists/)
+### [(240) 0x17. C - Doubly linked lists](./0x17-doubly_linked_lists/)
+Introduction to linked lists that cen be traversed both forwards and backwards.
 
-### [0x18. C - Dynamic libraries](./0x18-dynamic_libraries/)
+### [(242) 0x18. C - Dynamic libraries](./0x18-dynamic_libraries/)
+Creation and use of dynamically linked libraries, and comparison to static linking.
 
 ### [(249) 0x19. C - Stacks, Queues - LIFO, FIFO](https://github.com/allelomorph/monty)
 Third team project. Introduction to stacks and queues as varieties of linked lists, and implementation of a byte code interpreter.
 * Project [profile](./0x19-monty/)
 * Project repo: [`monty/`](https://github.com/allelomorph/monty)
 
-### [0x1A. C - Hash tables](./0x1A-hash_tables/)
+### [(253) 0x1A. C - Hash tables](./0x1A-hash_tables/)
+Introduction to hash functions, hash tables, and their use cases.
 
 ### [(248) 0x1B. C - Sorting algorithms & Big O](https://github.com/allelomorph/sorting_algorithms/)
 Fourth team project. Introduction to popular sorting algorithms, and using big O notation to indicate time and space complexity.
 * Project profile, repo: [`sorting_algorithms/`](https://github.com/allelomorph/sorting_algorithms/).
 
-### [0x1C. C - Makefiles](./0x1C-makefiles/)
+### [(273) 0x1C. C - Makefiles](./0x1C-makefiles/)
+Introduction to `make` and its role in automating compilation.
 
 ### [0x1D. C - Binary trees](https://github.com/allelomorph/binary_trees/)
 * Project profile, repo: [`binary_trees/`](https://github.com/allelomorph/binary_trees/).
