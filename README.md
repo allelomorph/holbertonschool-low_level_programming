@@ -99,10 +99,12 @@ Fourth team project. Introduction to popular sorting algorithms, and using big O
 ### [(273) 0x1C. C - Makefiles](./0x1C-makefiles/)
 Introduction to `make` and its role in automating compilation.
 
-### [0x1D. C - Binary trees](https://github.com/allelomorph/binary_trees/)
+### [(270) 0x1D. C - Binary trees](https://github.com/allelomorph/binary_trees/)
+Introduction to the characteristics, types, and use of binary trees.
 * Project profile, repo: [`binary_trees/`](https://github.com/allelomorph/binary_trees/).
 
-### [0x1E. C - Search Algorithms](./0x1E-search_algorithms/)
+### [(295) 0x1E. C - Search Algorithms](./0x1E-search_algorithms/)
+Introduction to commonly used search algorithms.
 
 ---
 
