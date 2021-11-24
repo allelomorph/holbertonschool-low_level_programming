@@ -10,7 +10,7 @@ Julien Barbier
 07-02-2020 to 07-08-2020
 
 ### Description
-`make` and its role in automating compilation.
+Introduction to `make` and its role in automating compilation.
 
 ### Requirements
 
