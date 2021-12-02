@@ -1,7 +1,18 @@
 # holbertonschool-low_level_programming
 
 ## Description
-Linux, algorithm, and C programming component of the Holberton school core curriculum. One directory per project.
+C programming, Linux, data structures and algorithm components of the Holberton school core curriculum.
+
+## General C project requirements
+
+### Compilation conditions
+* Ubuntu 14.04 LTS
+* gcc 4.8.4
+* flags `-Wall -Werror -Wextra -pedantic`
+
+### Linters
+* [betty-style](https://github.com/holbertonschool/Betty/blob/master/betty-style.pl)
+* [betty-doc](https://github.com/holbertonschool/Betty/blob/master/betty-doc.pl)
 
 ---
 
