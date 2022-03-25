@@ -12,9 +12,6 @@ Carrie Ybay
 ### Description
 Introduction to debugging and troubleshooting C programs.
 
-### Requirements
-* All your files will be compiled on Ubuntu 20.04 LTS using gcc, using the options `-Wall -Werror -Wextra -pedantic -std=gnu89`
-
 ### Provided file(s)
 * [`main.c`](./provided/main.c)
 * [`main.h`](./provided/main.h)
